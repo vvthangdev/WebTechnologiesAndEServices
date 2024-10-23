@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="assets/css/cv.css" />
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<html>
+  <body>
+    <header>
+      <div id="navbar-top">
+        <div class="box-small" id="navbar-top-item-left">
+          <div class="box-icon-container">
+            <img src="./assets/img/hust.png" />
+          </div>
+          <div class="box-title-container">
+            <div class="box-title">Đại học Bách Khoa Hà Nội</div>
+            <div class="box-des">Cổng thông tin sinh viên</div>
+          </div>
+        </div>
+        <div class="box-small" id="navbar-top-item-right">
+          <div class="box-title">Xin chào</div>
+          <div class="box-des">Sinh viên: Nguyễn Văn An</div>
+          <div class="box-icon-container">
+            <img class="box-icon" src="assets/img/ctsv.png" />
+          </div>
+        </div>
+      </div>
+      <nav class="navbar-list">
+        <ul>
+          <li><a href="">Trang chủ</a></li>
+          <li><a href="">Ngoại khóa</a></li>
+          <li><a href="">Hướng nghiệp</a></li>
+          <li><a href="">Học bổng</a></li>
+          <li><a href="">Chấm điểm</a></li>
+          <li><a href="">Hành chính</a></li>
+          <li><a href="">Q&A</a></li>
+          <li><a href="">Hồ sơ</a></li>
+          <li><a href="">Nhập học</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="web-body">
+        <div style="display: flex; flex-direction: column">
+          <div style="position: relative" class="card" id="card-user-info">
+            <div class="card-background-container">
+              <img class="card-background" src="assets/img/hust-back.png" />
+            </div>
+            <div class="card-avatar-container">
+              <img style="width: 100%" src="assets/img/VuVanThang.jpg" />
+            </div>
+            <!-- <img  src="assets/img/hust.png"> -->
+            <div class="card-body" style="margin-top: 5vw">
+              <ul>
+                <li>MS: 20202020</li>
+                <li>Họ tên: Đại học Bách Khoa</li>
+                <li>Lớp: Khoa học máy tính</li>
+                <li>Email: bkhn@sis.hust.edu.vn</li>
+                <li>Email cá nhân: bkhn@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card" id="card-more-info">
+            <div class="navbar-list">
+              <ul>
+                <li>
+                  <a
+                    class="active"
+                    onclick="handleChangeTab(event,'#card-more-info','trangthai')"
+                    >Trạng thái</a
+                  >
+                </li>
+                <li>
+                  <a onclick="handleChangeTab(event,'#card-more-info')"
+                    >Quản lý</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div id="trangthai">
+                <div class="text-block-body">
+                  <div>
+                    <p>Trạng thái học tập: Học</p>
+                    <p>CPA: 3.95</p>
+                    <p>Nợ: 0 TC</p>
+                    <p>Tích lũy: 99 TC</p>
+                    <p>Mức cảnh cáo: M0</p>
+                    <p>Trình độ:</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card" id="card-management-info">
+          <div class="navbar-list">
+            <ul>
+              <li>
+                <a
+                  class="active"
+                  onclick="handleChangeTab(event,'#card-management-info','cmi-lylich')"
+                  >Lý lịch</a
+                >
+              </li>
+              <li>
+                <a onclick="handleChangeTab(event,'#card-management-info')"
+                  >Quyết định</a
+                >
+              </li>
+              <li>
+                <a onclick="handleChangeTab(event,'#card-management-info')"
+                  >Khen thưởng</a
+                >
+              </li>
+              <li>
+                <a onclick="handleChangeTab(event,'#card-management-info')"
+                  >Liên hệ</a
+                >
+              </li>
+              <li>
+                <a onclick="handleChangeTab(event,'#card-management-info')"
+                  >Nhận xét</a
+                >
+              </li>
+              <li>
+                <a onclick="handleChangeTab(event,'#card-management-info')"
+                  >Hoạt động tham gia</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="card-body">
+            <div id="cmi-lylich">
+              <div>
+                <div>
+                  <h4>Thông tin cá nhân</h4>
+                  <div class="text-block-body">
+                    <div>
+                      <p>Ngày sinh: 01/01/2000</p>
+                      <p>Số CMTND:</p>
+                      <p>Dân tộc:</p>
+                      <p>Ngày vào Đoàn:</p>
+                    </div>
+                    <div>
+                      <p>Nơi sinh: Việt Nam</p>
+                      <p>Nơi cấp: Việt Nam</p>
+                      <p>Tôn giáo: Không</p>
+                      <p>Ngày vào Đảng:</p>
+                    </div>
+                    <div>
+                      <p>Giới tính:</p>
+                      <p>Ngày cấp:</p>
+                      <p>Chi đoàn:</p>
+                      <p>Đoàn viên</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-block-body">
+                  <div>
+                    <p>Đối tượng chính sách:</p>
+                    <p>Số thẻ bảo hiểm: 123</p>
+                    <p>Địa chỉ thường trú: 1 Đại Cồ Việt</p>
+                    <p>Nơi ở hiện tại: 1 Đại Cồ Việt</p>
+                  </div>
+                </div>
+                <div>
+                  <h4>Thông tin gia đình</h4>
+                  <div>
+                    <div>
+                      <div class="text-block-body text-bold">
+                        <p>Họ và tên bố:</p>
+                      </div>
+                      <div class="text-block-body">
+                        <div>
+                          <p>Dân tộc: Kinh</p>
+                          <p>Nơi làm việc:</p>
+                          <p>Địa chỉ thường trú:</p>
+                          <p>Liên hệ:</p>
+                        </div>
+                        <div>
+                          <p>Năm sinh:</p>
+                          <p>Tôn giáo:</p>
+                        </div>
+                        <div>
+                          <p>Quốc tịch:</p>
+                          <p>Nghề nghiệp:</p>
+                          <p></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="text-block-body text-bold">
+                    <p>Họ và tên mẹ:</p>
+                  </div>
+                  <div class="text-block-body">
+                    <div>
+                      <p>Dân tộc:</p>
+                      <p>Nơi làm việc:</p>
+                      <p>Địa chỉ thường trú:</p>
+                      <p>Liên hệ:</p>
+                    </div>
+                    <div>
+                      <p>Năm sinh:</p>
+                      <p>Tôn giáo:</p>
+                    </div>
+                    <div>
+                      <p>Quốc tịch:</p>
+                      <p>Nghề nghiệp:</p>
+                      <p></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-block-body text-bold">
+                Thông tin người thân khác:
+              </div>
+              <div class="text-block-body text-bold">
+                <div>Thuộc hộ:</div>
+                <div>Số sổ:</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="my-chart">
+        <!-- <img src="img/chart.png" style="width: 100%;"> -->
+        <div id="chart-learning"></div>
+        <div id="chart-training"></div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="assets/js/cv.js"></script>
+  </body>
+</html>
